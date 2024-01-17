@@ -169,13 +169,14 @@ const catsData = [
     },
 ]
 
+const emotionArray = []
 function getEmotionsArray(cats){
     for(let cat of cats){
-        // console.log(cat)
         for(let emotion of cat.emotionTags){
-            console.log(emotion)
+        emotionArray.push(emotion)       
         }
     }
+    console.log(emotionArray)
 //     const emotionsArray = []
 //     for (let i = 0; i < cats.length; i++){
 //         for (let j=0; j < cats[i].emotionTags.length; j++){
