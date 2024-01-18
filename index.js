@@ -12,8 +12,6 @@ function getEmotionsArray(cats){
     return emotionArray
 }
 
-
-
 function renderEmotionsRadios(cats){
     let radioItems = ``
     const emotions = getEmotionsArray(cats)
