@@ -10,19 +10,19 @@ getImgBtn.addEventListener("click", getMatchingCatsArray)
 //add-color
 
 function highlightCheckedOption(e){
-
-    const radios = document.getElementsByClassName('radio')
-    
+    const radios = document.getElementsByClassName('radio')    
     for(let radio of radios){
         radio.classList.remove('highlight')
     }
-
     document.getElementById(e.target.id).parentElement.classList.add('highlight')
 }
 
 function getMatchingCatsArray(){
-    const selectedEmotion =  document.querySelector('input[type="radio"]:checked').value
-    console.log(selectedEmotion)
+    if(document.querySelector('input[type="radio"]:checked')){
+        const selectedEmotion =  document.querySelector('input[type="radio"]:checked').value
+        console.log(selectedEmotion)
+    }
+    
 }
 
 const emotionArray = []
